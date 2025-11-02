@@ -10,12 +10,12 @@ export default function About() {
         imageUrl="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=1920"
       />
 
-      <section className="py-16 bg-white dark:bg-slate-900 transition-colors duration-300">
+      <section className="py-16 bg-white dark:bg-black transition-colors duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 dark:text-slate-100 mb-6">Our Story</h2>
-              <div className="space-y-4 text-gray-700 dark:text-slate-300 leading-relaxed">
+              <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">Our Story</h2>
+              <div className="space-y-4 text-gray-700 dark:text-gray-300 leading-relaxed">
                 <p>
                   230 Conversations began with a simple question: What if young Adventists had a safe space
                   to have real, honest conversations about faith, doubt, culture, and life?
@@ -49,15 +49,15 @@ export default function About() {
         </div>
       </section>
 
-      <section className="py-16 bg-gray-50 dark:bg-slate-800 transition-colors duration-300">
+      <section className="py-16 bg-gray-50 dark:bg-neutral-950 transition-colors duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div className="bg-white dark:bg-slate-800 p-8 rounded-lg shadow-md border border-gray-200 dark:border-slate-700">
+            <div className="bg-white dark:bg-neutral-950 p-8 rounded-lg shadow-md border border-gray-200 dark:border-gray-800">
               <div className="bg-[#262450] w-16 h-16 rounded-full flex items-center justify-center mb-6">
                 <Target size={32} className="text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-slate-100 mb-4">Our Mission</h3>
-              <p className="text-gray-700 dark:text-slate-300 leading-relaxed">
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Our Mission</h3>
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                 To empower young Adventists to engage in authentic conversations about faith, culture,
                 and purpose, creating a community where questions are welcomed, growth is celebrated,
                 and every voice matters. We are committed to fostering spaces where young people can
@@ -65,12 +65,12 @@ export default function About() {
               </p>
             </div>
 
-            <div className="bg-white dark:bg-slate-800 p-8 rounded-lg shadow-md border border-gray-200 dark:border-slate-700">
+            <div className="bg-white dark:bg-neutral-950 p-8 rounded-lg shadow-md border border-gray-200 dark:border-gray-800">
               <div className="bg-[#a57614] dark:bg-[#d4a574] w-16 h-16 rounded-full flex items-center justify-center mb-6">
                 <Eye size={32} className="text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-slate-100 mb-4">Our Vision</h3>
-              <p className="text-gray-700 dark:text-slate-300 leading-relaxed">
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Our Vision</h3>
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                 We envision a generation of young Adventists who are confident in their faith, equipped
                 to navigate contemporary challenges, and passionate about living as authentic disciples
                 of Christ. We see communities where honest dialogue strengthens relationships, where
@@ -81,43 +81,43 @@ export default function About() {
         </div>
       </section>
 
-      <section className="py-16 bg-white dark:bg-slate-900 transition-colors duration-300">
+      <section className="py-16 bg-white dark:bg-black transition-colors duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <div className="bg-[#262450] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
               <Users size={32} className="text-white" />
             </div>
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-slate-100 mb-4">Our Values</h2>
-            <p className="text-lg text-gray-600 dark:text-slate-400 max-w-3xl mx-auto">
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Our Values</h2>
+            <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
               These core values guide everything we do at 230 Conversations
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center p-6">
-              <h4 className="text-xl font-bold text-gray-900 dark:text-slate-100 mb-3">Authenticity</h4>
-              <p className="text-gray-600 dark:text-slate-400">
+              <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Authenticity</h4>
+              <p className="text-gray-600 dark:text-gray-400">
                 We create spaces where people can be real about their struggles, questions, and victories.
               </p>
             </div>
 
             <div className="text-center p-6">
-              <h4 className="text-xl font-bold text-gray-900 dark:text-slate-100 mb-3">Community</h4>
-              <p className="text-gray-600 dark:text-slate-400">
+              <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Community</h4>
+              <p className="text-gray-600 dark:text-gray-400">
                 We believe in the power of supportive relationships and intentional connection.
               </p>
             </div>
 
             <div className="text-center p-6">
-              <h4 className="text-xl font-bold text-gray-900 dark:text-slate-100 mb-3">Growth</h4>
-              <p className="text-gray-600 dark:text-slate-400">
+              <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Growth</h4>
+              <p className="text-gray-600 dark:text-gray-400">
                 We champion continuous spiritual, emotional, and intellectual development.
               </p>
             </div>
 
             <div className="text-center p-6">
-              <h4 className="text-xl font-bold text-gray-900 dark:text-slate-100 mb-3">Grace</h4>
-              <p className="text-gray-600 dark:text-slate-400">
+              <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Grace</h4>
+              <p className="text-gray-600 dark:text-gray-400">
                 We extend the same grace we've received, meeting people where they are with love.
               </p>
             </div>

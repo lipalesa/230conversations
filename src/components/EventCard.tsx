@@ -17,7 +17,7 @@ export default function EventCard({ event }: EventCardProps) {
   };
 
   return (
-    <div className="bg-white dark:bg-slate-800 rounded-lg overflow-hidden shadow-md hover:shadow-xl dark:shadow-slate-900/50 dark:hover:shadow-slate-900 transition-all duration-300 transform hover:-translate-y-1 hover:scale-[1.02]">
+    <div className="bg-white dark:bg-neutral-950 rounded-lg overflow-hidden shadow-md hover:shadow-xl dark:shadow-black/50 dark:hover:shadow-black transition-all duration-300 transform hover:-translate-y-1 hover:scale-[1.02]">
       <div className="relative">
         <img
           src={event.image_url || 'https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg?auto=compress&cs=tinysrgb&w=800'}
@@ -25,23 +25,23 @@ export default function EventCard({ event }: EventCardProps) {
           className="w-full h-48 object-cover"
           loading="lazy"
         />
-        <div className="absolute top-4 right-4 bg-[#a57614] dark:bg-[#d4a574] text-white dark:text-slate-900 px-3 py-1 rounded-md text-sm font-semibold shadow-lg">
+        <div className="absolute top-4 right-4 bg-[#a57614] dark:bg-[#d4a574] text-white dark:text-black px-3 py-1 rounded-md text-sm font-semibold shadow-lg">
           {formatDate(event.date).split(',')[0]}
         </div>
       </div>
       <div className="p-6">
-        <h3 className="text-xl font-bold text-gray-900 dark:text-slate-100 mb-3">{event.title}</h3>
-        <div className="flex items-center text-gray-600 dark:text-slate-400 mb-2 text-sm">
+        <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">{event.title}</h3>
+        <div className="flex items-center text-gray-600 dark:text-gray-400 mb-2 text-sm">
           <Calendar size={16} className="mr-2 text-[#a57614] dark:text-[#d4a574]" />
           <span>{formatDate(event.date)}</span>
         </div>
         {event.location && (
-          <div className="flex items-center text-gray-600 dark:text-slate-400 mb-4 text-sm">
+          <div className="flex items-center text-gray-600 dark:text-gray-400 mb-4 text-sm">
             <MapPin size={16} className="mr-2 text-[#a57614] dark:text-[#d4a574]" />
             <span>{event.location}</span>
           </div>
         )}
-        <p className="text-gray-700 dark:text-slate-300 mb-4 line-clamp-3">{event.description}</p>
+        <p className="text-gray-700 dark:text-gray-300 mb-4 line-clamp-3">{event.description}</p>
         <Link
           to={`/events/${event.slug}`}
           className="inline-block text-[#a57614] dark:text-[#d4a574] font-semibold hover:text-[#8c6310] dark:hover:text-[#b8935f] transition-colors"

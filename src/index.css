@@ -23,29 +23,29 @@
   }
 
   .dark {
-    /* Dark mode colors */
-    --background: 15 23 42;
-    --foreground: 241 245 249;
-    --card: 30 41 59;
-    --card-foreground: 241 245 249;
+    /* Dark mode colors - Pure black */
+    --background: 0 0 0;
+    --foreground: 255 255 255;
+    --card: 18 18 18;
+    --card-foreground: 255 255 255;
     --primary: 212 165 116;
-    --primary-foreground: 15 23 42;
-    --secondary: 30 41 59;
-    --secondary-foreground: 241 245 249;
-    --muted: 51 65 85;
-    --muted-foreground: 148 163 184;
+    --primary-foreground: 0 0 0;
+    --secondary: 18 18 18;
+    --secondary-foreground: 255 255 255;
+    --muted: 38 38 38;
+    --muted-foreground: 163 163 163;
     --accent: 212 165 116;
-    --accent-foreground: 15 23 42;
-    --border: 51 65 85;
+    --accent-foreground: 0 0 0;
+    --border: 38 38 38;
   }
 
   * {
-    @apply border-gray-200 dark:border-slate-700;
+    @apply border-gray-200 dark:border-gray-800;
   }
 
   body {
     font-family: 'Open Sans', sans-serif;
-    @apply bg-white dark:bg-slate-900 text-gray-900 dark:text-slate-100 transition-colors duration-300;
+    @apply bg-white dark:bg-black text-gray-900 dark:text-white transition-colors duration-300;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -62,7 +62,7 @@
   }
 
   .glass {
-    @apply backdrop-blur-lg bg-white/80 dark:bg-slate-800/80 border-b border-gray-200/50 dark:border-slate-700/50 shadow-lg;
+    @apply backdrop-blur-lg bg-white/80 dark:bg-black/80 border-b border-gray-200/50 dark:border-gray-800/50 shadow-lg;
   }
 
   .transition-theme {

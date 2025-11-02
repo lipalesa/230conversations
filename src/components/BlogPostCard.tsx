@@ -18,7 +18,7 @@ export default function BlogPostCard({ post }: BlogPostCardProps) {
   };
 
   return (
-    <article className="bg-white dark:bg-slate-800 rounded-lg overflow-hidden shadow-md hover:shadow-xl dark:shadow-slate-900/50 dark:hover:shadow-slate-900 transition-all duration-300 transform hover:-translate-y-1 hover:scale-[1.02]">
+    <article className="bg-white dark:bg-neutral-950 rounded-lg overflow-hidden shadow-md hover:shadow-xl dark:shadow-black/50 dark:hover:shadow-black transition-all duration-300 transform hover:-translate-y-1 hover:scale-[1.02]">
       <Link to={`/read/${post.slug}`}>
         <img
           src={post.featured_image_url || 'https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=800'}
@@ -29,11 +29,11 @@ export default function BlogPostCard({ post }: BlogPostCardProps) {
       </Link>
       <div className="p-6">
         <Link to={`/read/${post.slug}`}>
-          <h3 className="text-xl font-bold text-gray-900 dark:text-slate-100 mb-3 hover:text-[#a57614] dark:hover:text-[#d4a574] transition-colors">
+          <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 hover:text-[#a57614] dark:hover:text-[#d4a574] transition-colors">
             {post.title}
           </h3>
         </Link>
-        <div className="flex items-center space-x-4 text-sm text-gray-600 dark:text-slate-400 mb-4">
+        <div className="flex items-center space-x-4 text-sm text-gray-600 dark:text-gray-400 mb-4">
           {post.author && (
             <div className="flex items-center">
               <User size={16} className="mr-2 text-[#a57614] dark:text-[#d4a574]" />
@@ -47,7 +47,7 @@ export default function BlogPostCard({ post }: BlogPostCardProps) {
             </div>
           )}
         </div>
-        <p className="text-gray-700 dark:text-slate-300 mb-4 line-clamp-3">
+        <p className="text-gray-700 dark:text-gray-300 mb-4 line-clamp-3">
           {post.content?.substring(0, 150)}...
         </p>
         <Link
