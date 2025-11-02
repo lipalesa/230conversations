@@ -50,13 +50,13 @@ export default function Home() {
         ctaLink="/connect"
       />
 
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-white dark:bg-slate-900 transition-colors duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-slate-100 mb-4">
               Why 230 Conversations?
             </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg text-gray-600 dark:text-slate-400 max-w-3xl mx-auto leading-relaxed">
               Inspired by 2 Corinthians 3:0, we believe that authentic conversations shape who we are
               and who we become. We create spaces where young people can ask questions, share doubts,
               and grow together in faith.
@@ -65,31 +65,31 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center p-6">
-              <div className="bg-[#262450] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="bg-[#262450] dark:bg-slate-700 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 transition-colors">
                 <Users size={32} className="text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Community</h3>
-              <p className="text-gray-600">
+              <h3 className="text-xl font-bold text-gray-900 dark:text-slate-100 mb-2">Community</h3>
+              <p className="text-gray-600 dark:text-slate-400">
                 Connect with like-minded young people who are navigating faith in the modern world.
               </p>
             </div>
 
             <div className="text-center p-6">
-              <div className="bg-[#a57614] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <MessageCircle size={32} className="text-white" />
+              <div className="bg-[#a57614] dark:bg-[#d4a574] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 transition-colors">
+                <MessageCircle size={32} className="text-white dark:text-slate-900" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Dialogue</h3>
-              <p className="text-gray-600">
+              <h3 className="text-xl font-bold text-gray-900 dark:text-slate-100 mb-2">Dialogue</h3>
+              <p className="text-gray-600 dark:text-slate-400">
                 Engage in meaningful conversations that challenge, inspire, and deepen your faith journey.
               </p>
             </div>
 
             <div className="text-center p-6">
-              <div className="bg-[#262450] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="bg-[#262450] dark:bg-slate-700 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 transition-colors">
                 <Heart size={32} className="text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Growth</h3>
-              <p className="text-gray-600">
+              <h3 className="text-xl font-bold text-gray-900 dark:text-slate-100 mb-2">Growth</h3>
+              <p className="text-gray-600 dark:text-slate-400">
                 Discover resources and support to help you grow spiritually, emotionally, and socially.
               </p>
             </div>
@@ -97,13 +97,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-gray-50 dark:bg-slate-800 transition-colors duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center mb-8">
-            <h2 className="text-3xl font-bold text-gray-900">Upcoming Events</h2>
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-slate-100">Upcoming Events</h2>
             <Link
               to="/events"
-              className="text-[#a57614] font-semibold hover:text-[#8c6310] transition-colors"
+              className="text-[#a57614] dark:text-[#d4a574] font-semibold hover:text-[#8c6310] dark:hover:text-[#b8935f] transition-colors"
             >
               View All Events →
             </Link>
@@ -115,18 +115,18 @@ export default function Home() {
               ))}
             </div>
           ) : (
-            <p className="text-gray-600 text-center py-8">No upcoming events at the moment. Check back soon!</p>
+            <p className="text-gray-600 dark:text-slate-400 text-center py-8">No upcoming events at the moment. Check back soon!</p>
           )}
         </div>
       </section>
 
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-white dark:bg-slate-900 transition-colors duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center mb-8">
-            <h2 className="text-3xl font-bold text-gray-900">Latest Videos</h2>
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-slate-100">Latest Videos</h2>
             <Link
               to="/watch"
-              className="text-[#a57614] font-semibold hover:text-[#8c6310] transition-colors"
+              className="text-[#a57614] dark:text-[#d4a574] font-semibold hover:text-[#8c6310] dark:hover:text-[#b8935f] transition-colors"
             >
               Watch More →
             </Link>
@@ -138,18 +138,18 @@ export default function Home() {
               ))}
             </div>
           ) : (
-            <p className="text-gray-600 text-center py-8">No videos available yet. Check back soon!</p>
+            <p className="text-gray-600 dark:text-slate-400 text-center py-8">No videos available yet. Check back soon!</p>
           )}
         </div>
       </section>
 
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-gray-50 dark:bg-slate-800 transition-colors duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center mb-8">
-            <h2 className="text-3xl font-bold text-gray-900">Latest Articles</h2>
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-slate-100">Latest Articles</h2>
             <Link
               to="/read"
-              className="text-[#a57614] font-semibold hover:text-[#8c6310] transition-colors"
+              className="text-[#a57614] dark:text-[#d4a574] font-semibold hover:text-[#8c6310] dark:hover:text-[#b8935f] transition-colors"
             >
               Read More →
             </Link>
@@ -161,7 +161,7 @@ export default function Home() {
               ))}
             </div>
           ) : (
-            <p className="text-gray-600 text-center py-8">No articles available yet. Check back soon!</p>
+            <p className="text-gray-600 dark:text-slate-400 text-center py-8">No articles available yet. Check back soon!</p>
           )}
         </div>
       </section>

@@ -17,7 +17,7 @@ export default function Hero({ title, subtitle, ctaText, ctaLink, imageUrl }: He
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${imageUrl || defaultImage})` }}
       />
-      <div className="absolute inset-0 bg-[#262450] opacity-70" />
+      <div className="absolute inset-0 bg-[#262450] dark:bg-slate-950 opacity-70 dark:opacity-80 transition-all duration-300" />
 
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
         <h1 className="font-['Montserrat'] font-bold text-4xl md:text-6xl text-white mb-6 leading-tight">
@@ -29,7 +29,7 @@ export default function Hero({ title, subtitle, ctaText, ctaLink, imageUrl }: He
         {ctaText && ctaLink && (
           <Link
             to={ctaLink}
-            className="inline-block bg-[#a57614] text-white px-8 py-3 rounded-md hover:bg-[#8c6310] transition-colors font-semibold text-lg"
+            className="inline-block bg-[#a57614] dark:bg-[#d4a574] text-white dark:text-slate-900 px-8 py-3 rounded-md hover:bg-[#8c6310] dark:hover:bg-[#b8935f] transition-all font-semibold text-lg shadow-lg hover:shadow-xl hover:scale-105"
           >
             {ctaText}
           </Link>
