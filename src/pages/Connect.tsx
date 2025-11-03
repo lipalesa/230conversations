@@ -40,12 +40,12 @@ export default function Connect() {
         imageUrl="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=1920"
       />
 
-      <section className="py-16 bg-white dark:bg-slate-900 transition-colors duration-300">
+      <section className="py-16 bg-white dark:bg-black transition-colors duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 dark:text-slate-100 mb-6">I'm New Here</h2>
-              <div className="space-y-4 text-gray-700 dark:text-slate-300 leading-relaxed mb-8">
+              <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">I'm New Here</h2>
+              <div className="space-y-4 text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
                 <p>
                   Welcome to 230 Conversations! We're thrilled that you found us. Whether you stumbled
                   upon our website, heard about us from a friend, or are simply curious about what we do,
@@ -135,8 +135,8 @@ export default function Connect() {
             </div>
 
             <div>
-              <div className="bg-white dark:bg-slate-800 border-2 border-gray-200 dark:border-slate-700 rounded-lg p-8 shadow-md">
-                <h2 className="text-2xl font-bold text-gray-900 dark:text-slate-100 mb-6">Get In Touch</h2>
+              <div className="bg-white dark:bg-neutral-950 border-2 border-gray-200 dark:border-gray-800 rounded-lg p-8 shadow-md">
+                <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Get In Touch</h2>
 
                 {submitMessage && (
                   <div className="mb-6 p-4 bg-green-50 border border-green-200 text-green-800 rounded-md">
@@ -146,7 +146,7 @@ export default function Connect() {
 
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div>
-                    <label htmlFor="name" className="block text-gray-700 dark:text-slate-300 font-semibold mb-2">
+                    <label htmlFor="name" className="block text-gray-700 dark:text-gray-300 font-semibold mb-2">
                       Your Name *
                     </label>
                     <input
@@ -156,13 +156,13 @@ export default function Connect() {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-gray-900 dark:text-slate-100 rounded-md focus:ring-2 focus:ring-[#a57614] dark:focus:ring-[#d4a574] focus:border-transparent outline-none transition-all"
+                      className="w-full px-4 py-3 border border-gray-300 dark:border-gray-700 bg-white dark:bg-neutral-900 text-gray-900 dark:text-white rounded-md focus:ring-2 focus:ring-[#a57614] dark:focus:ring-[#d4a574] focus:border-transparent outline-none transition-all"
                       placeholder="John Doe"
                     />
                   </div>
 
                   <div>
-                    <label htmlFor="email" className="block text-gray-700 dark:text-slate-300 font-semibold mb-2">
+                    <label htmlFor="email" className="block text-gray-700 dark:text-gray-300 font-semibold mb-2">
                       Your Email *
                     </label>
                     <input
@@ -172,13 +172,13 @@ export default function Connect() {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-gray-900 dark:text-slate-100 rounded-md focus:ring-2 focus:ring-[#a57614] dark:focus:ring-[#d4a574] focus:border-transparent outline-none transition-all"
+                      className="w-full px-4 py-3 border border-gray-300 dark:border-gray-700 bg-white dark:bg-neutral-900 text-gray-900 dark:text-white rounded-md focus:ring-2 focus:ring-[#a57614] dark:focus:ring-[#d4a574] focus:border-transparent outline-none transition-all"
                       placeholder="john@example.com"
                     />
                   </div>
 
                   <div>
-                    <label htmlFor="interest" className="block text-gray-700 dark:text-slate-300 font-semibold mb-2">
+                    <label htmlFor="interest" className="block text-gray-700 dark:text-gray-300 font-semibold mb-2">
                       I'm Interested In
                     </label>
                     <select
@@ -186,7 +186,7 @@ export default function Connect() {
                       name="interest"
                       value={formData.interest}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-gray-900 dark:text-slate-100 rounded-md focus:ring-2 focus:ring-[#a57614] dark:focus:ring-[#d4a574] focus:border-transparent outline-none transition-all"
+                      className="w-full px-4 py-3 border border-gray-300 dark:border-gray-700 bg-white dark:bg-neutral-900 text-gray-900 dark:text-white rounded-md focus:ring-2 focus:ring-[#a57614] dark:focus:ring-[#d4a574] focus:border-transparent outline-none transition-all"
                     >
                       <option value="general">General Inquiry</option>
                       <option value="events">Attending Events</option>
@@ -198,7 +198,7 @@ export default function Connect() {
                   </div>
 
                   <div>
-                    <label htmlFor="message" className="block text-gray-700 dark:text-slate-300 font-semibold mb-2">
+                    <label htmlFor="message" className="block text-gray-700 dark:text-gray-300 font-semibold mb-2">
                       Your Message *
                     </label>
                     <textarea
@@ -208,7 +208,7 @@ export default function Connect() {
                       onChange={handleChange}
                       required
                       rows={5}
-                      className="w-full px-4 py-3 border border-gray-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-gray-900 dark:text-slate-100 rounded-md focus:ring-2 focus:ring-[#a57614] dark:focus:ring-[#d4a574] focus:border-transparent outline-none transition-all resize-none"
+                      className="w-full px-4 py-3 border border-gray-300 dark:border-gray-700 bg-white dark:bg-neutral-900 text-gray-900 dark:text-white rounded-md focus:ring-2 focus:ring-[#a57614] dark:focus:ring-[#d4a574] focus:border-transparent outline-none transition-all resize-none"
                       placeholder="Tell us a bit about yourself or what you'd like to know..."
                     />
                   </div>

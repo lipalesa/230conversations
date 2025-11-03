@@ -40,7 +40,7 @@ export default function BlogPostDetail() {
 
   if (loading) {
     return (
-      <div className="min-h-screen flex items-center justify-center pt-16 bg-white dark:bg-slate-900">
+      <div className="min-h-screen flex items-center justify-center pt-16 bg-white dark:bg-black">
         <div className="inline-block animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-[#a57614] dark:border-[#d4a574]"></div>
       </div>
     );
@@ -48,9 +48,9 @@ export default function BlogPostDetail() {
 
   if (!post) {
     return (
-      <div className="min-h-screen flex items-center justify-center pt-16 bg-white dark:bg-slate-900">
+      <div className="min-h-screen flex items-center justify-center pt-16 bg-white dark:bg-black">
         <div className="text-center">
-          <h1 className="text-3xl font-bold text-gray-900 dark:text-slate-100 mb-4">Article Not Found</h1>
+          <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Article Not Found</h1>
           <Link
             to="/read"
             className="text-[#a57614] dark:text-[#d4a574] font-semibold hover:text-[#8c6310] dark:hover:text-[#b8935f] transition-colors"
@@ -63,7 +63,7 @@ export default function BlogPostDetail() {
   }
 
   return (
-    <div className="min-h-screen pt-16 bg-white dark:bg-slate-900">
+    <div className="min-h-screen pt-16 bg-white dark:bg-black">
       <div className="relative h-96">
         <img
           src={post.featured_image_url || 'https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=1920'}
@@ -74,7 +74,7 @@ export default function BlogPostDetail() {
       </div>
 
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 -mt-32 relative z-10">
-        <div className="bg-white dark:bg-slate-800 rounded-lg shadow-xl p-8 md:p-12 border border-gray-200 dark:border-slate-700">
+        <div className="bg-white dark:bg-neutral-950 rounded-lg shadow-xl p-8 md:p-12 border border-gray-200 dark:border-gray-800">
           <Link
             to="/read"
             className="inline-flex items-center text-[#a57614] dark:text-[#d4a574] font-semibold hover:text-[#8c6310] dark:hover:text-[#b8935f] transition-colors mb-6"
@@ -83,9 +83,9 @@ export default function BlogPostDetail() {
             Back to Articles
           </Link>
 
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-slate-100 mb-6">{post.title}</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">{post.title}</h1>
 
-          <div className="flex flex-wrap items-center gap-4 mb-8 text-gray-600 dark:text-slate-400">
+          <div className="flex flex-wrap items-center gap-4 mb-8 text-gray-600 dark:text-gray-400">
             {post.author && (
               <div className="flex items-center">
                 <User size={18} className="mr-2 text-[#a57614] dark:text-[#d4a574]" />
@@ -101,16 +101,16 @@ export default function BlogPostDetail() {
           </div>
 
           <div className="prose prose-lg max-w-none">
-            <div className="text-gray-700 dark:text-slate-300 leading-relaxed whitespace-pre-line">
+            <div className="text-gray-700 dark:text-gray-300 leading-relaxed whitespace-pre-line">
               {post.content}
             </div>
           </div>
 
-          <div className="mt-12 pt-8 border-t border-gray-200 dark:border-slate-700">
+          <div className="mt-12 pt-8 border-t border-gray-200 dark:border-gray-800">
             <div className="flex items-center justify-between">
               <div>
-                <h3 className="text-xl font-bold text-gray-900 dark:text-slate-100 mb-2">Enjoyed this article?</h3>
-                <p className="text-gray-600 dark:text-slate-400">Share it with your community and join the conversation.</p>
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Enjoyed this article?</h3>
+                <p className="text-gray-600 dark:text-gray-400">Share it with your community and join the conversation.</p>
               </div>
               <Link
                 to="/read"

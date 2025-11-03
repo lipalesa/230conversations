@@ -32,7 +32,7 @@ export default function Read() {
         imageUrl="https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=1920"
       />
 
-      <section className="py-16 bg-white dark:bg-slate-900 transition-colors duration-300">
+      <section className="py-16 bg-white dark:bg-black transition-colors duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {loading ? (
             <div className="text-center py-12">
@@ -46,16 +46,16 @@ export default function Read() {
             </div>
           ) : (
             <div className="text-center py-12">
-              <p className="text-gray-600 dark:text-slate-400 text-lg">No articles available yet. Check back soon!</p>
+              <p className="text-gray-600 dark:text-gray-400 text-lg">No articles available yet. Check back soon!</p>
             </div>
           )}
         </div>
       </section>
 
-      <section className="py-16 bg-gray-50 dark:bg-slate-800 transition-colors duration-300">
+      <section className="py-16 bg-gray-50 dark:bg-neutral-950 transition-colors duration-300">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-slate-100 mb-6">Have a Story to Share?</h2>
-          <p className="text-lg text-gray-600 dark:text-slate-400 mb-8 leading-relaxed">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">Have a Story to Share?</h2>
+          <p className="text-lg text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
             We welcome guest contributions from young people who want to share their faith journey,
             insights, or perspectives. If you have something to say, we'd love to hear from you.
           </p>
